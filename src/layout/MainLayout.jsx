@@ -11,7 +11,6 @@ export default function MainLayout() {
         <div className="container mx-auto min-h-screen p-10">
             <Outlet></Outlet>
             </div>    
-
         <Footer></Footer>
     </div>
   )

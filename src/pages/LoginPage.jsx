@@ -1,6 +1,21 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { AuthContext } from '../provider/Authprovider';
+import { Navigate, useNavigate } from 'react-router-dom';
 
 export default function LoginPage() {
+    const { loginWithGoogle } = useContext(AuthContext)
+    const navigate = useNavigate();
+    const handleGoogleLogIn = () => {
+        loginWithGoogle().then((res) => {
+            console.log(res)
+            navigate("/"); 
+
+        }).catch((err) => console.log(err));
+
+    }
+
+
+
     return (
         <div>
             <div className="hero bg-base-200 min-h-screen">
@@ -32,7 +47,9 @@ export default function LoginPage() {
                             <div className="form-control mt-6">
                                 <button className="btn btn-primary">Login</button>
                             </div>
+                            <button onClick={handleGoogleLogIn} class="card-body" className="btn btn-secondary">login with Google</button>
                         </form>
+
                     </div>
                 </div>
             </div>
