@@ -7,7 +7,7 @@ export default function ProductsPage() {
   const user = useLoaderData();
 
   useEffect(() => {
-    fetch(`http://localhost:5000/books`).
+    fetch(`https://boighorbackend.vercel.app/books`).
       then((res) => res.json()).
       then((data) => setBooks(data))
   }, [])
