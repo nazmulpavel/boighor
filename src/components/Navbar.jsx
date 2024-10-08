@@ -10,8 +10,8 @@ const handleLogOut = () =>{
   logOutUser();
 } 
   return (
-    <div>
-      <div className="navbar bg-base-100">
+    <div >
+      <div className="navbar bg-emerald-200">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -31,7 +31,7 @@ const handleLogOut = () =>{
             <ul
               tabIndex={0}
               className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-              <Link to="/public"><a>Home</a></Link>
+              <Link to="/"><a >Home</a></Link>
               <Link to="/product"><a>Product</a></Link>
             </ul>
           </div>
@@ -42,9 +42,9 @@ const handleLogOut = () =>{
 
         </div>
         <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1 space-x-2  hover:text-orange-700">
-            <Link to="/public" ><a className = " hover:text-orange-700">Home</a></Link>
-            <Link to="/product"><a className = "">Producs</a></Link>
+          <ul className="menu menu-horizontal px-1 text-2xl bold space-x-5  ">
+            <Link to="/" ><a className= " hover:text-orange-700">Home</a></Link>
+            <Link to="/product"><a className = " hover:text-orange-700">Products</a></Link>
           </ul>
         </div>
         <div className="navbar-end gap-2">

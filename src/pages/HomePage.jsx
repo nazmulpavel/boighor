@@ -47,16 +47,16 @@ export default function HomePage() {
       <hr />
       <hr />
 
-      <h3 className="text-3xl bold text-center p-2 ">Unleashing the Reader in You</h3>
+      <h3 className="text-3xl bold text-center p-2 ">"Unleashing the Reader in You"</h3>
       <br /> <hr />
       <hr />
       <hr />
       <br />
 
       <div
-        className="hero min-h-screen"
+        className="hero "
         style={{
-          backgroundImage: "url(/src/assets/banner5.jpg)",
+          backgroundImage: "url(./src/assets/banner2.avif",
         }}>
         <div className="hero-overlay bg-opacity-60"></div>
         <div className="hero-content text-neutral-content text-center">
