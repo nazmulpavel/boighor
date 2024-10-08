@@ -8,7 +8,7 @@ export default function LoginPage() {
     const handleGoogleLogIn = () => {
         loginWithGoogle().then((res) => {
             console.log(res)
-            navigate("/"); 
+            navigate("/");
 
         }).catch((err) => console.log(err));
 

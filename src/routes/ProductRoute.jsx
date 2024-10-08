@@ -1,6 +1,7 @@
 import React, { useContext } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { AuthContext } from '../provider/Authprovider';
+import { Navigate, useLocation } from "react-router-dom";
 
 export default function ProductRoute({children}) {
    const navigate = useNavigate();
@@ -11,7 +12,9 @@ export default function ProductRoute({children}) {
 
   }
     console.log("ollll");
-    return navigate("/login");
+    // return navigate("/login");
+
+    return <Navigate state={location.pathname} to="/login"></Navigate>
 
 
 }

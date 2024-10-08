@@ -6,14 +6,13 @@ export default function Navbar() {
   const { user, logOutUser } = useContext(AuthContext);
   console.log(user);
   const navigate = useNavigate();
-const handleLogOut = () =>{
-    logOutUser().then((res)=>{
-      navigate("/"); 
-console.log("helljsfjskf");
+  const handleLogOut = () => {
+    logOutUser().then((res) => {
+      navigate("/");
     });
-  
 
-} 
+
+  }
   return (
     <div >
       <div className="navbar bg-emerald-200">
@@ -40,16 +39,16 @@ console.log("helljsfjskf");
               <Link to="/product"><a>Product</a></Link>
             </ul>
           </div>
-          <img className= "w-10 rounded-full" src= "./src/assets/icon.png" alt="logo  " />
+          <img className="w-10 rounded-full" src="icon.png" alt="logo  " />
           <Link to="/">
-          <a className="btn btn-ghost text-xl  hover:text-orange-700">BookMania</a>
+            <a className="btn btn-ghost text-xl  hover:text-orange-700">BookMania</a>
           </Link>
 
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1 text-2xl bold space-x-5  ">
-            <Link to="/" ><a className= " hover:text-orange-700">Home</a></Link>
-            <Link to="/product"><a className = " hover:text-orange-700">Products</a></Link>
+            <Link to="/" ><a className=" hover:text-orange-700">Home</a></Link>
+            <Link to="/product"><a className=" hover:text-orange-700">Products</a></Link>
           </ul>
         </div>
         <div className="navbar-end gap-2">
@@ -64,7 +63,7 @@ console.log("helljsfjskf");
             </>) : (<Link to="/login"> <a className="btn  hover:text-orange-700">LogIn</a> </Link>)
           }
           {
-            user ? <></>: (<Link to="/login"> <a className="btn  hover:text-orange-700">Register</a> </Link>)
+            user ? <></> : (<Link to="/login"> <a className="btn  hover:text-orange-700">Register</a> </Link>)
           }
         </div>
       </div>
