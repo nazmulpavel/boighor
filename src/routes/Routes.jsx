@@ -6,6 +6,8 @@ import PublicPage from "../pages/PublicPage";
 import LoginPage from "../pages/LoginPage";
 import ProductRoute from "./ProductRoute.jsx";
 import ProductsPage from "../pages/ProductsPage.jsx";
+import BookDetails from "../pages/BookDetails.jsx";
+import ErrorPage from "../pages/ErrorPage.jsx";
 
 const router = createBrowserRouter([
     {
@@ -31,6 +33,15 @@ const router = createBrowserRouter([
                 <ProductsPage/>
               </ProductRoute>
           },
+          {
+            path: '/bookdetails/:bookId',
+            element: <BookDetails/>,
+        },
+          {
+            path:  '/*',
+            element: <ErrorPage/>,
+        },
+    
 
       ],
     },

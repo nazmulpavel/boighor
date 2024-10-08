@@ -53,7 +53,8 @@ const handleLogOut = () =>{
               <div class="flex items-center gap-3">
                 <img class="w-7 rounded-full" src={user?.photoURL} alt="" />
                 <span>{user?.displayName}</span>
-                <button onClick={handleLogOut} className="btn  hover:text-orange-700">Logout</button>
+
+                <button onClick={handleLogOut} className="btn btn-outline  hover:bg-green-600 btn-success">Logout</button>
               </div>
             </>) : (<Link to="/login"> <a className="btn  hover:text-orange-700">LogIn</a> </Link>)
           }
