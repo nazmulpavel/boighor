@@ -63,7 +63,7 @@ export default function Navbar() {
             </>) : (<Link to="/login"> <a className="btn  hover:text-orange-700">LogIn</a> </Link>)
           }
           {
-            user ? <></> : (<Link to="/login"> <a className="btn  hover:text-orange-700">Register</a> </Link>)
+            user ? <></> : (<Link to="/register"> <a className="btn  hover:text-orange-700">Register</a> </Link>)
           }
         </div>
       </div>
